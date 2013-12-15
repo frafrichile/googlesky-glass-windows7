@@ -15,9 +15,14 @@ on the CMD terminal
 
 type :
 ADB devices ( make sure your device is visible) 
+#
 Adb shell am start –a android.intent.action.MAIN n-
+#
 adb shell dumpsys | findstr android.intent.action.MAIN
+#
 adb shell am start -a android.intent.action.MAIN -n com.google.android.stardroid/com.google.android.stardroid.activities.SplashScreenActivity 
+#
+
 At this point tap your Glass on and the app should be running.
 You will need to “down swipe” on your glass to cancel the agreement window. 
 If you see the app running, disconnect, go outside, and check this out at nighttime! 
